@@ -6,11 +6,11 @@ function App() {
   return (
     <>
       <div className='px-12 py-16 bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50'>
-        <h1 className='text-center text-8xl font-semibold'>Your Trusted <br /> Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full border-blue-800 p-1 border inline' /> Partner</h1>
-        <p className='text-center text-lg mt-5 text-gray-500 max-w-[800px] m-auto'>Smart Insurance For Smart People. Comprehensive Coverage, Exceptional Service. The Strength To Rebuild, The Power To Protect.</p>
-        <div className='grid grid-cols-3 max-w-[1250px] mx-auto mt-12'>
+        <h1 className='text-center sm:text-8xl text-2xl font-semibold'>Your Trusted <br /> Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full border-blue-800 p-1 border inline' /> Partner</h1>
+        <p className='text-center sm:text-lg text-sm mt-5 text-gray-500 max-w-[800px] m-auto'>Smart Insurance For Smart People. Comprehensive Coverage, Exceptional Service. The Strength To Rebuild, The Power To Protect.</p>
+        <div className='grid sm:grid-cols-3 max-w-[1250px] mx-auto mt-12'>
           <Cards>
-            <h2 className='font-semibold text-4xl mt-2'>Select Best Plan For Your Future</h2>
+            <h2 className='font-semibold sm:text-4xl text-2xl mt-2'>Select Best Plan For Your Future</h2>
             <p className='text-xs text-gray-400 mt-4 font-semibold ml-2'>Making Accidents Less Of A Hassle. Your Safety Gear On The Road. Ride Worry-Free With Us</p>
             <p className='text-xs text-gray-400 font-semibold mb-2 ml-2'>A Promise Of Security On Wheels.</p>
             <div className='flex'>
@@ -24,13 +24,13 @@ function App() {
             <Cards className={""}>
               <img src='/MensHealth.jpeg' className='rounded-xl h-[180px] w-full object-cover' />
               <div>
-                <div className='mt-4 flex justify-between items-center'>
+                <div className='mt-4 sm:flex justify-between items-center'>
                   <div className='flex gap-1'>
                     <div className='px-3 py-1.5 rounded-full w-fit bg-blue-600 border text-xs text-white font-semibold'>Health</div>
                     <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Home Loan</div>
                     <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Car Loan</div>
                   </div>
-                  <div className='font-bold text-xs'>$30/month</div>
+                  <div className='font-bold text-xs sm:mt-0 mt-2'>$30/month</div>
                 </div>
                 <h3 className='mt-4 font-bold text-sm'>Health Insurance</h3>
                 <p className='text-xs font-semibold text-gray-400 my-1 line-clamp-2'>The Strength To Rebuild, The Power To Protect. Trusted By Generations. Protecting Your Legacy.</p>
@@ -73,13 +73,13 @@ function App() {
         </div>
       </div>
       <div className='bg-[#f2f7ff] px-4 py-6'>
-        <div className='max-w-[1250px] mx-auto grid grid-cols-[1fr_1.2fr] gap-16 items-center'>
+        <div className='max-w-[1250px] mx-auto grid sm:grid-cols-[1fr_1.2fr] gap-16 items-center'>
           <div>
-            <h2 className='font-[400] leading-normal text-5xl'>Leveraging the power of technology, data and innovation</h2>
-            <p className='text-xl text-gray-500 mt-4 border-l-2 pl-2 border-blue-500'>Our Policy platform offerings Address the large and highly under penetrated online insurance and lending markets</p>
+            <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'>Leveraging the power of technology, data and innovation</h2>
+            <p className='sm:text-xl text-gray-500 mt-4 border-l-2 pl-2 border-blue-500'>Our Policy platform offerings Address the large and highly under penetrated online insurance and lending markets</p>
           </div>
           <div>
-            <div className='grid grid-cols-2 gap-8'>
+            <div className='grid sm:grid-cols-2 gap-8'>
               <Cards className={"p-6"}>
                 <div>
                   <img src='/easy.svg' width={60} />
@@ -124,16 +124,16 @@ function App() {
         </div>
       </div>
       <div className='max-w-[1250px] mx-auto my-12'>
-          <h2 className='text-5xl font-bold text-center'>What sets us apart</h2>
-          <div className='mt-20'>
+          <h2 className='sm:text-5xl text-3xl font-bold text-center'>What sets us apart</h2>
+          <div className='sm:mt-20 mt-12'>
             {apartArray?.map((item,index)=>{
               return( 
-                <div key={index} className={`flex items-center gap-8 py-8 ${index%2===0?"":"flex-row-reverse"}`}>
+                <div key={index} className={`flex sm:flex-row flex-col items-center gap-8 py-8 ${index%2===0?"":"sm:flex-row-reverse"} flex-col-reverse`}>
                   <div className={`flex-[1.5] ${item?.background} p-8 rounded-xl`}>
                     <h2 className={`text-5xl font-light tracking-wider mb-4`}>{item?.sNo}</h2>
-                    <h3 className='text-4xl font-semibold'>{item?.heading}</h3>
+                    <h3 className='smLtext-4xl text-2xl font-semibold'>{item?.heading}</h3>
                     <span className={`block w-[70px] h-[3px] mt-1 ${item?.color}`}></span>
-                    <p className='text-xl text-gray-500 mt-4'>{item?.content}</p>
+                    <p className='sm:text-xl text-gray-500 mt-4'>{item?.content}</p>
                   </div>
                   <div className='px-8'>
                     <img src={item?.imageUrl} width={400} className='mx-auto' />
@@ -142,6 +142,31 @@ function App() {
               )
             })}
           </div>
+      </div>
+      <div className='bg-[#f2f7ff] px-4 py-6'>
+      <div className='max-w-[1250px] mx-auto sm:my-12 my-4'>
+            <h2 className='sm:text-5xl text-3xl sm:text-left text-center font-[600]'>Investor relations</h2>
+            <div className='grid sm:grid-cols-2 sm:gap-6 gap-12 my-12'>
+              {relationArray?.map((item,index)=>{
+                return(
+                <div className='flex gap-4 items-center'>
+                  <div>
+                    <img src={item?.imageUrl} alt={item?.alt} width={100} className='sm:w-[100px] w-[70px]' />
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-500'>{item?.title}</p>
+                    <h3 className='sm:text-4xl text-2xl font-bold mt-2'>
+                      <span>{item?.count}</span>
+                      <span className='sm:text-[18px] text-sm font-semibold'> ({item?.time})</span>  
+                    </h3>
+                    
+                  </div>
+                </div>
+                )
+              })}
+            </div>
+            <button className='text-white font-semibold px-6 py-3 rounded-xl bg-blue-600'>View reports</button>
+      </div>
       </div>
     </>
   );
@@ -260,5 +285,35 @@ const apartArray = [
 
     heading:"Strong, consumer friendly brands",
     content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands in both Policybazaar and Paisabazaar which are recognised throughout India."
+  },
+]
+const relationArray = [
+  {
+    imageUrl:"/premium.png",
+    alt:"insurance",
+    title:"Insurance Premium",
+    count:"₹218 billion",
+    time:"ARR Q2 FY25"
+  },
+  {
+    imageUrl:"/sold.png",
+    alt:"policy",
+    title:"Insurance Policies Sold",
+    count:"46.8 million",
+    time:"Till September 2024"
+  },
+  {
+    imageUrl:"/loan.png",
+    alt:"loan",
+    title:"Loan Disbursals",
+    count:"₹169 billion",
+    time:"ARR Q2 FY25"
+  },
+  {
+    imageUrl:"/score.png",
+    alt:"score",
+    title:"Credit Score Customers",
+    count:"47.7 million",
+    time:"Till September 2024"
   },
 ]
