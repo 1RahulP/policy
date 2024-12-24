@@ -5,8 +5,8 @@ import Cards from './components/card-ui/Card';
 function App() {
   return (
     <>
-      <div className='px-12 py-16 bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50'>
-        <h1 className='text-center sm:text-8xl text-2xl font-semibold'>Your Trusted <br /> Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full border-blue-800 p-1 border inline' /> Partner</h1>
+      <div className='sm:px-12 px-4 py-16 bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50'>
+        <h1 className='text-center sm:text-8xl text-2xl font-semibold'>Your Trusted <br /> Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full sm:w-[80px] sm:h-[80px] w-[50px] border-blue-800 p-1 border inline' /> Partner</h1>
         <p className='text-center sm:text-lg text-sm mt-5 text-gray-500 max-w-[800px] m-auto'>Smart Insurance For Smart People. Comprehensive Coverage, Exceptional Service. The Strength To Rebuild, The Power To Protect.</p>
         <div className='grid sm:grid-cols-3 max-w-[1250px] mx-auto mt-12'>
           <Cards>
