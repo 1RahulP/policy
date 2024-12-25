@@ -43,7 +43,7 @@ function App() {
           </div>
           <div>
             <Cards>
-              <div className='flex gap-4'>
+              <div className='flex gap-4 sm:items-start items-center'>
                 <div className='bg-[#d1f1ff] rounded-xl h-fit p-2'>
                   <img src='/calender.svg' width={24} />
                 </div>
@@ -52,7 +52,7 @@ function App() {
                   <p className='text-gray-500 font-semibold text-lg'>Upcoming Events</p>
                   <p>
                     <span className='font-bold text-xl'>9035 </span>
-                    <span className='font-semibold text-gray-500'>peple are coming</span>
+                    <span className='font-semibold text-gray-500 sm:text-md text-sm'>peple are coming</span>
                   </p>
                 </div>
               </div>
@@ -85,14 +85,14 @@ function App() {
                   <img src='/easy.svg' width={60} />
                 </div>
                 <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
-                <p className='mt-3 line-clamp-5 text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
+                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
               </Cards>
               <Cards className={"p-6"}>
                 <div>
                   <img src='/trans.svg' width={60} />
                 </div>
                 <h3 className='text-2xl font-semibold mt-4'>We seek to increase transparency for consumers</h3>
-                <p className='mt-3 line-clamp-5 text-lg text-gray-500'>Through our consumer-centric approach, we seek to enable online research-based purchases of insurance and lending products. This helps consumers to make informed choices.</p>
+                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>Through our consumer-centric approach, we seek to enable online research-based purchases of insurance and lending products. This helps consumers to make informed choices.</p>
               </Cards>
             </div>
             <div className='mt-8'>
@@ -101,7 +101,7 @@ function App() {
                 <img src='/limited.svg' width={60} />
               </div>
               <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
-              <p className='mt-3 line-clamp-5 text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
+              <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
             </Cards>
             </div>
             
@@ -248,7 +248,7 @@ const apartArray = [
     background:"bg-[#e6fcff]",
 
     heading:"Strong, consumer friendly brands",
-    content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands in both Policybazaar and Paisabazaar which are recognised throughout India."
+    content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands which are recognised throughout India."
   },
   {
     sNo:"02",
@@ -256,8 +256,8 @@ const apartArray = [
     color:"bg-green-500",
     background:"bg-[#e3fcef]",
 
-    heading:"Strong, consumer friendly brands",
-    content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands in both Policybazaar and Paisabazaar which are recognised throughout India."
+    heading:"Our Proprietary Technology, Data and Intelligence Stack",
+    content:"Our proprietary technology stack helps us design user-friendly Consumer journeys across all of our processes by automating various aspects across the product value chain We also leverage technology to provide high quality consumer service."
   },
   {
     sNo:"03",
@@ -265,8 +265,8 @@ const apartArray = [
     color:"bg-purple-500",
     background:"bg-[#f4f2ff]",
 
-    heading:"Strong, consumer friendly brands",
-    content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands in both Policybazaar and Paisabazaar which are recognised throughout India."
+    heading:"Service and Responsiveness",
+    content:"We provide convenient servicing options to our Consumers using technology integrations with our insurer and lending Partners, supported by our experienced, qualified and knowledgeable staff."
   },
   {
     sNo:"04",
@@ -274,8 +274,8 @@ const apartArray = [
     color:"bg-yellow-500",
     background:"bg-[#fcf5da]",
 
-    heading:"Strong, consumer friendly brands",
-    content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands in both Policybazaar and Paisabazaar which are recognised throughout India."
+    heading:"Collaborative partner for Insurer and Lending Partners",
+    content:"In addition to providing our partners with a low cost platform to target the right customers, we leverage our technology and insights to help our partners improve their risk assessment models, fraud detection and underwriting capabilities as well as help them create customised products. The consumer acquisition cost for our Insurer and Lending Partners is one of the lowest through our platforms"
   },
   {
     sNo:"05",
@@ -283,8 +283,8 @@ const apartArray = [
     color:"bg-red-500",
     background:"bg-[#fff2ef]",
 
-    heading:"Strong, consumer friendly brands",
-    content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands in both Policybazaar and Paisabazaar which are recognised throughout India."
+    heading:"Asset light capital strategy",
+    content:"We have an asset-light capital strategy and do not underwrite any insurance or retain any credit risk on our books."
   },
 ]
 const relationArray = [
