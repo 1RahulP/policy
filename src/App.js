@@ -25,12 +25,12 @@ function App() {
               <img src='/MensHealth.jpeg' className='rounded-xl h-[180px] w-full object-cover' />
               <div>
                 <div className='mt-4 sm:flex justify-between items-center'>
-                  <div className='flex gap-1'>
+                  {/* <div className='flex gap-1'>
                     <div className='px-3 py-1.5 rounded-full w-fit bg-blue-600 border text-xs text-white font-semibold'>Health</div>
                     <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Home Loan</div>
                     <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Car Loan</div>
                   </div>
-                  <div className='font-bold text-xs sm:mt-0 mt-2'>₹599/month</div>
+                  <div className='font-bold text-xs sm:mt-0 mt-2'>₹599/month</div> */}
                 </div>
                 <h3 className='mt-4 font-bold text-sm'>Health Insurance</h3>
                 <p className='text-xs font-semibold text-gray-400 my-1 line-clamp-2'>The Strength To Rebuild, The Power To Protect. Trusted By Generations. Protecting Your Legacy.</p>
@@ -48,7 +48,7 @@ function App() {
                   <img src='/calender.svg' width={24} />
                 </div>
                 <div>
-                  <p className='text-green-700 text-sm font-semibold'>15.4% Seat available</p>
+                  {/* <p className='text-green-700 text-sm font-semibold'>15.4% Seat available</p> */}
                   <p className='text-gray-500 font-semibold text-lg'>Upcoming Events</p>
                   <p>
                     <span className='font-bold text-xl'>9035 </span>
@@ -96,117 +96,107 @@ function App() {
               </Cards>
             </div>
             <div className='mt-8'>
-            <Cards className={"max-w-full p-6"}>
-              <div>
-                <img src='/limited.svg' width={60} />
-              </div>
-              <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
-              <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
-            </Cards>
+              <Cards className={"max-w-full p-6"}>
+                <div>
+                  <img src='/limited.svg' width={60} />
+                </div>
+                <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
+                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
+              </Cards>
             </div>
-            
+
           </div>
         </div>
       </div>
       <div className='max-w-[1250px] mx-auto px-4 py-8'>
         <h2 className='text-3xl font-semibold'>We're Offerings</h2>
         <div className='flex gap-8 flex-wrap mt-8'>
-          {offeringArray?.map((item,index)=>{
-            return(
+          {offeringArray?.map((item, index) => {
+            return (
               <div key={index} className='w-[140px]'>
                 <div className='bg-[#F2F7FF] rounded-xl p-2 h-[80px]'>
                   <img src={item?.imageUrl} alt={item?.alt} width={60} className='mx-auto' />
                 </div>
-                  <p className='text-center whitespace-normal mt-2'>{item?.name}</p>
+                <p className='text-center whitespace-normal mt-2'>{item?.name}</p>
               </div>
             )
           })}
         </div>
       </div>
       <div className='max-w-[1250px] mx-auto my-12'>
-          <h2 className='sm:text-5xl text-3xl font-bold text-center'>What sets us apart</h2>
-          <div className='sm:mt-20 mt-12'>
-            {apartArray?.map((item,index)=>{
-              return( 
-                <div key={index} className={`flex sm:flex-row flex-col items-center gap-8 py-8 ${index%2===0?"":"sm:flex-row-reverse"} flex-col-reverse`}>
-                  <div className={`flex-[1.5] ${item?.background} p-8 rounded-xl`}>
-                    <h2 className={`text-5xl font-light tracking-wider mb-4`}>{item?.sNo}</h2>
-                    <h3 className='smLtext-4xl text-2xl font-semibold'>{item?.heading}</h3>
-                    <span className={`block w-[70px] h-[3px] mt-1 ${item?.color}`}></span>
-                    <p className='sm:text-xl text-gray-500 mt-4'>{item?.content}</p>
-                  </div>
-                  <div className='px-8'>
-                    <img src={item?.imageUrl} width={400} className='mx-auto' />
-                  </div>
+        <h2 className='sm:text-5xl text-3xl font-bold text-center'>What sets us apart</h2>
+        <div className='sm:mt-20 mt-12'>
+          {apartArray?.map((item, index) => {
+            return (
+              <div key={index} className={`flex sm:flex-row flex-col items-center gap-8 py-8 ${index % 2 === 0 ? "" : "sm:flex-row-reverse"} flex-col-reverse`}>
+                <div className={`flex-[1.5] ${item?.background} p-8 rounded-xl`}>
+                  <h2 className={`text-5xl font-light tracking-wider mb-4`}>{item?.sNo}</h2>
+                  <h3 className='smLtext-4xl text-2xl font-semibold'>{item?.heading}</h3>
+                  <span className={`block w-[70px] h-[3px] mt-1 ${item?.color}`}></span>
+                  <p className='sm:text-xl text-gray-500 mt-4'>{item?.content}</p>
                 </div>
-              )
-            })}
-          </div>
-      </div>
-      <div className='bg-[#f2f7ff] px-4 py-6'>
-      <div className='max-w-[1250px] mx-auto sm:my-12 my-4'>
-            <h2 className='sm:text-5xl text-3xl sm:text-left text-center font-[600]'>Investor relations</h2>
-            <div className='grid sm:grid-cols-2 sm:gap-6 gap-12 my-12'>
-              {relationArray?.map((item,index)=>{
-                return(
-                <div className='flex gap-4 items-center'>
-                  <div>
-                    <img src={item?.imageUrl} alt={item?.alt} width={100} className='sm:w-[100px] w-[70px]' />
-                  </div>
-                  <div>
-                    <p className='font-semibold text-gray-500'>{item?.title}</p>
-                    <h3 className='sm:text-4xl text-2xl font-bold mt-2'>
-                      <span>{item?.count}</span>
-                      <span className='sm:text-[18px] text-sm font-semibold'> ({item?.time})</span>  
-                    </h3>
-                    
-                  </div>
-                </div>
-                )
-              })}
-            </div>
-            <button className='text-white font-semibold px-6 py-3 rounded-xl bg-blue-600'>View reports</button>
-      </div>
-      </div>
-      <div className='sm:p-12 p-4 max-w-[1350px] mx-auto'>
-              <h2 className='sm:text-4xl text-2xl mb- font-semibold8'>Contact Us</h2>
-              <div className='grid sm:grid-cols-3 gap-8'>                
-                <div>
-                  <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#00B8D9] pb-2'>Write to us at:</h3>
-                  <div>
-                    <h4 className='font-semibold text-xl mt-4'>Rasleen Kaur</h4>
-                    <p className='sm:text-md text-sm'>Head, Investor Relations</p>
-                    <a href='#' className='sm:text-md text-sm'>investor.relations@pbfintech.in </a>
-                  </div>
-                </div>
-                <div>
-                  <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#8777D9] pb-2'>Compliance officer:</h3>
-                  <div className='grid gap-1'>
-                    <h4 className='font-semibold text-xl mt-4'>Bhasker Joshi</h4>
-                    <p className='sm:text-md text-sm'>Company Secretary & Compliance Officer</p>
-                    <p className='sm:text-md text-sm'>complianceofficer@pbfintech.in</p>
-                    <a className='sm:text-md text-sm' href='#'>Contact No. 0124- 4562907</a>
-                    <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562902</a>                    
-                    <p className='sm:text-md text-sm'>**For Redressal of Investor Grievances you may contact the Compliance Officer.</p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#36B37E] pb-2'>Registered address:</h3>
-                  <div className='grid gap-1'>
-                    <h4 className='font-semibold text-xl mt-4'>PB Fintech Limited</h4>
-                    <p className='sm:text-md text-sm'>Plot 119, Sector 44, Gurugram- 122001, Haryana</p>
-                    
-                    <a className='sm:text-md text-sm' href='#'>Phone No: 0124-4562907</a>
-                    <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562907</a>                    
-                  </div>
+                <div className='px-8'>
+                  <img src={item?.imageUrl} width={400} className='mx-auto' />
                 </div>
               </div>
+            )
+          })}
+        </div>
+      </div>
+      <div className='bg-[#f2f7ff] px-4 py-6'>
+        <div className='max-w-[1250px] mx-auto sm:my-8 my-4'>
+          <div className='max-w-[450px] mx-auto bg-white p-4 rounded-xl'>
+          <h2 className='sm:text-3xl text-2xl font-semibold text-center mb-8'>Connect with us</h2>
+            <form action={"#"} className='grid gap-4'>
+              <input type='text' placeholder='Full name' className='block px-4 py-2 rounded-md bg-[#f2f7ff] border border-[#f2f7ff] focus:border-blue-500 focus-visible:border outline-none' />
+              <input type='mail' placeholder='Email' className='block px-4 py-2 rounded-md bg-[#f2f7ff] border border-[#f2f7ff] focus:border-blue-500 focus-visible:border outline-none' />
+              <input type='phone' placeholder='Phone no.' className='block px-4 py-2 rounded-md bg-[#f2f7ff] border border-[#f2f7ff] focus:border-blue-500 focus-visible:border outline-none' />
+              <div className='text-center mt-4'>
+                <button className='text-white font-semibold px-6 py-3 rounded-xl bg-blue-600 mx-auto w-full'>Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div className='sm:p-12 p-4 max-w-[1350px] mx-auto'>
+        <h2 className='sm:text-4xl text-2xl mb- font-semibold8'>Contact Us</h2>
+        <div className='grid sm:grid-cols-3 gap-8'>
+          <div>
+            <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#00B8D9] pb-2'>Write to us at:</h3>
+            <div>
+              <h4 className='font-semibold text-xl mt-4'>Rasleen Kaur</h4>
+              <p className='sm:text-md text-sm'>Head, Investor Relations</p>
+              <a href='#' className='sm:text-md text-sm'>investor.relations@pbfintech.in </a>
+            </div>
+          </div>
+          <div>
+            <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#8777D9] pb-2'>Compliance officer:</h3>
+            <div className='grid gap-1'>
+              <h4 className='font-semibold text-xl mt-4'>Bhasker Joshi</h4>
+              <p className='sm:text-md text-sm'>Company Secretary & Compliance Officer</p>
+              <p className='sm:text-md text-sm'>complianceofficer@pbfintech.in</p>
+              <a className='sm:text-md text-sm' href='#'>Contact No. 0124- 4562907</a>
+              <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562902</a>
+              <p className='sm:text-md text-sm'>**For Redressal of Investor Grievances you may contact the Compliance Officer.</p>
+            </div>
+          </div>
+          <div>
+            <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#36B37E] pb-2'>Registered address:</h3>
+            <div className='grid gap-1'>
+              <h4 className='font-semibold text-xl mt-4'>PB Fintech Limited</h4>
+              <p className='sm:text-md text-sm'>Plot 119, Sector 44, Gurugram- 122001, Haryana</p>
+
+              <a className='sm:text-md text-sm' href='#'>Phone No: 0124-4562907</a>
+              <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562907</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div className='fixed bottom-8 w-full text-center'>
-      <button class="px-6 py-3 text-white font-semibold bg-blue-500 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 animate-blink-shadow">
-    Join Now
-  </button>
-  </div>
+        <button class="px-6 py-3 text-white font-semibold bg-blue-500 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 animate-blink-shadow">
+          Join Now
+        </button>
+      </div>
     </>
   );
 }
@@ -214,145 +204,145 @@ function App() {
 export default App;
 const offeringArray = [
   {
-    imageUrl:"/01.png",
-    alt:"term insurance",
-    name:"Term Insurance"
+    imageUrl: "/01.png",
+    alt: "term insurance",
+    name: "Term Insurance"
   },
   {
-    imageUrl:"/02.svg",
-    alt:"life insurance",
-    name:"Life Insurance"
+    imageUrl: "/02.svg",
+    alt: "life insurance",
+    name: "Life Insurance"
   },
   {
-    imageUrl:"/03.png",
-    alt:"health",
-    name:"Health Insurance"
+    imageUrl: "/03.png",
+    alt: "health",
+    name: "Health Insurance"
   },
   {
-    imageUrl:"/04.png",
-    alt:"investment",
-    name:"Investment Plans"
+    imageUrl: "/04.png",
+    alt: "investment",
+    name: "Investment Plans"
   },
   {
-    imageUrl:"/05.png",
-    alt:"car",
-    name:"Car Insurance"
+    imageUrl: "/05.png",
+    alt: "car",
+    name: "Car Insurance"
   },
   {
-    imageUrl:"/06.png",
-    alt:"two wheeler",
-    name:"2 Wheeler Insurance"
+    imageUrl: "/06.png",
+    alt: "two wheeler",
+    name: "2 Wheeler Insurance"
   },
   {
-    imageUrl:"/07.png",
-    alt:"family",
-    name:"Family Health Insurance"
+    imageUrl: "/07.png",
+    alt: "family",
+    name: "Family Health Insurance"
   },
   {
-    imageUrl:"/08.png",
-    alt:"aeroplane",
-    name:"Travel Insurance"
+    imageUrl: "/08.png",
+    alt: "aeroplane",
+    name: "Travel Insurance"
   },
   {
-    imageUrl:"/09.png",
-    alt:"women",
-    name:"Term Insurance (Women)"
+    imageUrl: "/09.png",
+    alt: "women",
+    name: "Term Insurance (Women)"
   },
   {
-    imageUrl:"/10.png",
-    alt:"guarnteed",
-    name:"Guaranteed Return Plans"
+    imageUrl: "/10.png",
+    alt: "guarnteed",
+    name: "Guaranteed Return Plans"
   },
   {
-    imageUrl:"/11.png",
-    alt:"child",
-    name:"Child Savings Plans"
+    imageUrl: "/11.png",
+    alt: "child",
+    name: "Child Savings Plans"
   },
   {
-    imageUrl:"/12.png",
-    alt:"retirement",
-    name:"Retirement Plans"
+    imageUrl: "/12.png",
+    alt: "retirement",
+    name: "Retirement Plans"
   },
   {
-    imageUrl:"/13.png",
-    alt:"home",
-    name:"Home Insurance"
+    imageUrl: "/13.png",
+    alt: "home",
+    name: "Home Insurance"
   },
 ]
 const apartArray = [
   {
-    sNo:"01",
-    imageUrl:"/apart01.png",
-    color:"bg-blue-500",
-    background:"bg-[#e6fcff]",
+    sNo: "01",
+    imageUrl: "/apart01.png",
+    color: "bg-blue-500",
+    background: "bg-[#e6fcff]",
 
-    heading:"Strong, consumer friendly brands",
-    content:"We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands which are recognised throughout India."
+    heading: "Strong, consumer friendly brands",
+    content: "We offer wide choice, transparency and the ability for Consumers to research and access insurance and personal credit products offered by our Insurer and Lending Partners. Through our Consumer-centric approach, we have created strong brands which are recognised throughout India."
   },
   {
-    sNo:"02",
-    imageUrl:"/apart02.png",
-    color:"bg-green-500",
-    background:"bg-[#e3fcef]",
+    sNo: "02",
+    imageUrl: "/apart02.png",
+    color: "bg-green-500",
+    background: "bg-[#e3fcef]",
 
-    heading:"Our Proprietary Technology, Data and Intelligence Stack",
-    content:"Our proprietary technology stack helps us design user-friendly Consumer journeys across all of our processes by automating various aspects across the product value chain We also leverage technology to provide high quality consumer service."
+    heading: "Our Proprietary Technology, Data and Intelligence Stack",
+    content: "Our proprietary technology stack helps us design user-friendly Consumer journeys across all of our processes by automating various aspects across the product value chain We also leverage technology to provide high quality consumer service."
   },
   {
-    sNo:"03",
-    imageUrl:"/apart03.png",
-    color:"bg-purple-500",
-    background:"bg-[#f4f2ff]",
+    sNo: "03",
+    imageUrl: "/apart03.png",
+    color: "bg-purple-500",
+    background: "bg-[#f4f2ff]",
 
-    heading:"Service and Responsiveness",
-    content:"We provide convenient servicing options to our Consumers using technology integrations with our insurer and lending Partners, supported by our experienced, qualified and knowledgeable staff."
+    heading: "Service and Responsiveness",
+    content: "We provide convenient servicing options to our Consumers using technology integrations with our insurer and lending Partners, supported by our experienced, qualified and knowledgeable staff."
   },
   {
-    sNo:"04",
-    imageUrl:"/apart04.png",
-    color:"bg-yellow-500",
-    background:"bg-[#fcf5da]",
+    sNo: "04",
+    imageUrl: "/apart04.png",
+    color: "bg-yellow-500",
+    background: "bg-[#fcf5da]",
 
-    heading:"Collaborative partner for Insurer and Lending Partners",
-    content:"In addition to providing our partners with a low cost platform to target the right customers, we leverage our technology and insights to help our partners improve their risk assessment models, fraud detection and underwriting capabilities as well as help them create customised products. The consumer acquisition cost for our Insurer and Lending Partners is one of the lowest through our platforms"
+    heading: "Collaborative partner for Insurer and Lending Partners",
+    content: "In addition to providing our partners with a low cost platform to target the right customers, we leverage our technology and insights to help our partners improve their risk assessment models, fraud detection and underwriting capabilities as well as help them create customised products. The consumer acquisition cost for our Insurer and Lending Partners is one of the lowest through our platforms"
   },
   {
-    sNo:"05",
-    imageUrl:"/apart05.png",
-    color:"bg-red-500",
-    background:"bg-[#fff2ef]",
+    sNo: "05",
+    imageUrl: "/apart05.png",
+    color: "bg-red-500",
+    background: "bg-[#fff2ef]",
 
-    heading:"Asset light capital strategy",
-    content:"We have an asset-light capital strategy and do not underwrite any insurance or retain any credit risk on our books."
+    heading: "Asset light capital strategy",
+    content: "We have an asset-light capital strategy and do not underwrite any insurance or retain any credit risk on our books."
   },
 ]
 const relationArray = [
   {
-    imageUrl:"/premium.png",
-    alt:"insurance",
-    title:"Insurance Premium",
-    count:"₹218 billion",
-    time:"ARR Q2 FY25"
+    imageUrl: "/premium.png",
+    alt: "insurance",
+    title: "Insurance Premium",
+    count: "₹218 billion",
+    time: "ARR Q2 FY25"
   },
   {
-    imageUrl:"/sold.png",
-    alt:"policy",
-    title:"Insurance Policies Sold",
-    count:"46.8 million",
-    time:"Till September 2024"
+    imageUrl: "/sold.png",
+    alt: "policy",
+    title: "Insurance Policies Sold",
+    count: "46.8 million",
+    time: "Till September 2024"
   },
   {
-    imageUrl:"/loan.png",
-    alt:"loan",
-    title:"Loan Disbursals",
-    count:"₹169 billion",
-    time:"ARR Q2 FY25"
+    imageUrl: "/loan.png",
+    alt: "loan",
+    title: "Loan Disbursals",
+    count: "₹169 billion",
+    time: "ARR Q2 FY25"
   },
   {
-    imageUrl:"/score.png",
-    alt:"score",
-    title:"Credit Score Customers",
-    count:"47.7 million",
-    time:"Till September 2024"
+    imageUrl: "/score.png",
+    alt: "score",
+    title: "Credit Score Customers",
+    count: "47.7 million",
+    time: "Till September 2024"
   },
 ]
