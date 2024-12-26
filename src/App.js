@@ -168,6 +168,45 @@ function App() {
             <button className='text-white font-semibold px-6 py-3 rounded-xl bg-blue-600'>View reports</button>
       </div>
       </div>
+      <div className='sm:p-12 p-4 max-w-[1350px] mx-auto'>
+              <h2 className='sm:text-4xl text-xl mb-8'>Contact Us</h2>
+              <div className='grid sm:grid-cols-3 gap-8'>                
+                <div>
+                  <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#00B8D9] pb-2'>Write to us at:</h3>
+                  <div>
+                    <h4 className='font-semibold text-xl mt-4'>Rasleen Kaur</h4>
+                    <p>Head, Investor Relations</p>
+                    <a href='#'>investor.relations@pbfintech.in </a>
+                  </div>
+                </div>
+                <div>
+                  <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#8777D9] pb-2'>Compliance officer:</h3>
+                  <div className='grid gap-1'>
+                    <h4 className='font-semibold text-xl mt-4'>Bhasker Joshi</h4>
+                    <p>Company Secretary & Compliance Officer</p>
+                    <p>complianceofficer@pbfintech.in</p>
+                    <a href='#'>Contact No. 0124- 4562907</a>
+                    <a href='#'>Fax: 0124-4562902</a>                    
+                    <p>**For Redressal of Investor Grievances you may contact the Compliance Officer.</p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#36B37E] pb-2'>Registered address:</h3>
+                  <div className='grid gap-1'>
+                    <h4 className='font-semibold text-xl mt-4'>PB Fintech Limited</h4>
+                    <p>Plot 119, Sector 44, Gurugram- 122001, Haryana</p>
+                    
+                    <a href='#'>Phone No: 0124-4562907</a>
+                    <a href='#'>Fax: 0124-4562907</a>                    
+                  </div>
+                </div>
+              </div>
+      </div>
+      <div className='fixed bottom-8 w-full text-center'>
+      <button class="px-6 py-3 text-white font-semibold bg-blue-500 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 animate-blink-shadow">
+    Join Now
+  </button>
+  </div>
     </>
   );
 }
