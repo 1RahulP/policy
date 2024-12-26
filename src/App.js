@@ -175,29 +175,29 @@ function App() {
                   <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#00B8D9] pb-2'>Write to us at:</h3>
                   <div>
                     <h4 className='font-semibold text-xl mt-4'>Rasleen Kaur</h4>
-                    <p>Head, Investor Relations</p>
-                    <a href='#'>investor.relations@pbfintech.in </a>
+                    <p className='sm:text-md text-sm'>Head, Investor Relations</p>
+                    <a href='#' className='sm:text-md text-sm'>investor.relations@pbfintech.in </a>
                   </div>
                 </div>
                 <div>
                   <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#8777D9] pb-2'>Compliance officer:</h3>
                   <div className='grid gap-1'>
                     <h4 className='font-semibold text-xl mt-4'>Bhasker Joshi</h4>
-                    <p>Company Secretary & Compliance Officer</p>
-                    <p>complianceofficer@pbfintech.in</p>
-                    <a href='#'>Contact No. 0124- 4562907</a>
-                    <a href='#'>Fax: 0124-4562902</a>                    
-                    <p>**For Redressal of Investor Grievances you may contact the Compliance Officer.</p>
+                    <p className='sm:text-md text-sm'>Company Secretary & Compliance Officer</p>
+                    <p className='sm:text-md text-sm'>complianceofficer@pbfintech.in</p>
+                    <a className='sm:text-md text-sm' href='#'>Contact No. 0124- 4562907</a>
+                    <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562902</a>                    
+                    <p className='sm:text-md text-sm'>**For Redressal of Investor Grievances you may contact the Compliance Officer.</p>
                   </div>
                 </div>
                 <div>
                   <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#36B37E] pb-2'>Registered address:</h3>
                   <div className='grid gap-1'>
                     <h4 className='font-semibold text-xl mt-4'>PB Fintech Limited</h4>
-                    <p>Plot 119, Sector 44, Gurugram- 122001, Haryana</p>
+                    <p className='sm:text-md text-sm'>Plot 119, Sector 44, Gurugram- 122001, Haryana</p>
                     
-                    <a href='#'>Phone No: 0124-4562907</a>
-                    <a href='#'>Fax: 0124-4562907</a>                    
+                    <a className='sm:text-md text-sm' href='#'>Phone No: 0124-4562907</a>
+                    <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562907</a>                    
                   </div>
                 </div>
               </div>
