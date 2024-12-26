@@ -169,7 +169,7 @@ function App() {
       </div>
       </div>
       <div className='sm:p-12 p-4 max-w-[1350px] mx-auto'>
-              <h2 className='sm:text-4xl text-xl mb-8'>Contact Us</h2>
+              <h2 className='sm:text-4xl text-2xl mb- font-semibold8'>Contact Us</h2>
               <div className='grid sm:grid-cols-3 gap-8'>                
                 <div>
                   <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#00B8D9] pb-2'>Write to us at:</h3>
