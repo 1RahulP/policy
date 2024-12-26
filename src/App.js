@@ -30,7 +30,7 @@ function App() {
                     <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Home Loan</div>
                     <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Car Loan</div>
                   </div>
-                  <div className='font-bold text-xs sm:mt-0 mt-2'>$30/month</div>
+                  <div className='font-bold text-xs sm:mt-0 mt-2'>₹599/month</div>
                 </div>
                 <h3 className='mt-4 font-bold text-sm'>Health Insurance</h3>
                 <p className='text-xs font-semibold text-gray-400 my-1 line-clamp-2'>The Strength To Rebuild, The Power To Protect. Trusted By Generations. Protecting Your Legacy.</p>
