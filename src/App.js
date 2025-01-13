@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Cards from './components/card-ui/Card';
 
@@ -72,21 +72,83 @@ function App() {
           </div>
         </div>
       </div>
+      <div class="max-w-[1250px] mx-auto sm:p-8 p-4">
+        <div class="text-center mb-8">
+          <img src="/insurance.png" alt="PBP Logo" class="mx-auto sm:w-32 w-14 h-auto" />
+          <h1 class="sm:text-4xl text-xl font-semibold text-blue-600 mt-4">
+            PBP Fintech & Insurance
+          </h1>
+          <p class="sm:text-lg text-gray-700 mt-2">
+            An Indian company licensed to provide online marketing, consulting, and technology services to insurers and lending partners.
+          </p>
+        </div>
+
+
+        <div class="bg-blue-50 sm:p-6 p-4 rounded-lg shadow-md">
+          <h2 class="sm:text-xl text-lg sm:text-left text-center font-semibold text-blue-700">Creating Common Shade For:</h2>
+          <ul class="list-disc pl-6 sm:mt-4 mt-2 space-y-2 text-gray-800 text-sm sm:text-md">
+            <li><strong>A)</strong> All Insurance Solutions with Leading Companies (Life/Health/Motor/Non-Motor)</li>
+            <li><strong>B)</strong> Mutual Fund Investments (Lumpsum/SIP)</li>
+            <li><strong>C)</strong> Credit Card</li>
+            <li><strong>D)</strong> All Types of Loans: Personal/Business/Mortgage/Home/New Car/Refinance</li>
+            <li><strong>E)</strong> Solar Power Distribution (Under PM Surya Ghar Subsidy for Residential Households)</li>
+          </ul>
+        </div>
+
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+            <img src="/png/policy-bazar.png" alt="Policy Sazar Logo" class="w-36 mx-auto" />
+            <p class="text-gray-600 mt-4">An online platform for consumers and insurer partners to buy and sell insurance products.</p>
+          </div>
+          <div class="text-center p-4 bg-white rounded-lg shadow-sm h-full">
+            <img src="/png/paisa.svg" alt="Paisabazar Logo" class="w-36 mx-auto" />
+            <p class="text-gray-600 mt-4">An independent digital lending platform for personal credit products.</p>
+          </div>
+        </div>
+
+
+        <div class="mt-12">
+          <h3 class="text-xl font-semibold text-blue-700 mb-8 sm:text-left text-center">Also Incorporated With:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="p-4 bg-white rounded-lg shadow-md border bg-gradient-to-r from-blue-100 to-purple-100">
+              <h4 class="text-lg font-semibold text-blue-800">Pro Finance for Credit Activities</h4>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md border bg-gradient-to-r from-blue-100 to-purple-100">
+              <h4 class="text-lg font-semibold text-blue-800">New Fintech for Solar Empowerment</h4>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md border bg-gradient-to-r from-blue-100 to-purple-100">
+              <h4 class="text-lg font-semibold text-blue-800">Probus as Alternative Insurance Partner</h4>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md border bg-gradient-to-r from-blue-100 to-purple-100">
+              <h4 class="text-lg font-semibold text-blue-800">DOL as Loan Provider</h4>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md border bg-gradient-to-r from-blue-100 to-purple-100">
+              <h4 class="text-lg font-semibold text-blue-800">Andromeda: India's Largest Loan Partner</h4>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md border bg-gradient-to-r from-blue-100 to-purple-100">
+              <h4 class="text-lg font-semibold text-blue-800">HDFC Secretariat for Mutual Fund SIP</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className=' px-4 py-16'>
         <div className='max-w-[1250px] mx-auto'>
-        <h2 className='sm:text-5xl text-2xl font-semibold text-center mb-14'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text'> PB Fintech?</span></h2>
-        <div className='grid sm:grid-cols-4 gap-4'>
-          {whyArray?.map((item,index)=>{
-            return(
-          <div className='text-center' key={index}>
-            <img src={item?.imageUrl} alt={item?.alt} width={80} height={80} className='mx-auto mb-4 w-[80px] w-[50px]' />
-            <p className='font-semibold sm:text-2xl text-xl my-2'>{item?.counts}</p>
-            <p className='sm:text-md text-sm'>{item?.title}</p>
-          </div>
+          <h2 className='sm:text-5xl text-2xl font-semibold text-center mb-14'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text'> PB Fintech?</span></h2>
+          <div className='grid sm:grid-cols-4 gap-4'>
+            {whyArray?.map((item, index) => {
+              return (
+                <div className='text-center' key={index}>
+                  <img src={item?.imageUrl} alt={item?.alt} width={80} height={80} className='mx-auto mb-4 w-[80px] w-[50px]' />
+                  <p className='font-semibold sm:text-2xl text-xl my-2'>{item?.counts}</p>
+                  <p className='sm:text-md text-sm'>{item?.title}</p>
+                </div>
 
-            )
-          })}
-        </div>
+              )
+            })}
+          </div>
         </div>
       </div>
       <div className='px-4 sm:py-16 py-6 bg-gradient-to-r from-blue-100 to-purple-100'>
@@ -126,21 +188,21 @@ function App() {
         </div>
       </div>
       <div className=''>
-      <div className='max-w-[1250px] mx-auto px-4 py-8'>
-        <h2 className='sm:text-5xl text-2xl sm:text-left text-center font-semibold sm:py-12'>We're <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Offerings</span></h2>
-        <div className='flex gap-8 flex-wrap mt-8'>
-          {offeringArray?.map((item, index) => {
-            return (
-              <div key={index} className='w-[140px]'>
-                <div className='bg-[#F2F7FF] rounded-xl p-2 h-[80px]'>
-                  <img src={item?.imageUrl} alt={item?.alt} width={60} className='mx-auto' />
+        <div className='max-w-[1250px] mx-auto px-4 py-8'>
+          <h2 className='sm:text-5xl text-2xl sm:text-left text-center font-semibold sm:py-12'>We're <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Offerings</span></h2>
+          <div className='flex gap-8 flex-wrap mt-8'>
+            {offeringArray?.map((item, index) => {
+              return (
+                <div key={index} className='w-[140px]'>
+                  <div className='bg-[#F2F7FF] rounded-xl p-2 h-[80px]'>
+                    <img src={item?.imageUrl} alt={item?.alt} width={60} className='mx-auto' />
+                  </div>
+                  <p className='text-center whitespace-normal mt-2'>{item?.name}</p>
                 </div>
-                <p className='text-center whitespace-normal mt-2'>{item?.name}</p>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
-      </div>
       </div>
       <div className='max-w-[1250px] mx-auto my-12'>
         <h2 className='sm:text-5xl text-3xl font-bold text-center'>What <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic font-semibold'> sets us</span> apart</h2>
@@ -165,7 +227,7 @@ function App() {
       <div className='bg-[#f2f7ff] px-4 py-6'>
         <div className='max-w-[1250px] mx-auto sm:my-8 my-4'>
           <div className='max-w-[450px] mx-auto bg-white p-4 rounded-xl'>
-          <h2 className='sm:text-3xl text-2xl font-semibold text-center mb-8'>Connect with us</h2>
+            <h2 className='sm:text-3xl text-2xl font-semibold text-center mb-8'>Connect with us</h2>
             <form action={"#"} className='grid gap-4'>
               <input type='text' placeholder='Full name' className='block px-4 py-2 rounded-md bg-[#f2f7ff] border border-[#f2f7ff] focus:border-blue-500 focus-visible:border outline-none' />
               <input type='mail' placeholder='Email' className='block px-4 py-2 rounded-md bg-[#f2f7ff] border border-[#f2f7ff] focus:border-blue-500 focus-visible:border outline-none' />
@@ -178,40 +240,40 @@ function App() {
         </div>
       </div>
       <div className='bg-gradient-to-r from-blue-100 to-purple-100'>
-      <div className='sm:p-12 p-4 max-w-[1350px] mx-auto'>
-        <h2 className='sm:text-4xl text-2xl mb- font-semibold8'>Contact Us</h2>
-        <div className='grid sm:grid-cols-3 gap-8'>
-          <div>
-            <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#00B8D9] pb-2'>Write to us at:</h3>
+        <div className='sm:p-12 p-4 max-w-[1350px] mx-auto'>
+          <h2 className='sm:text-4xl text-2xl mb- font-semibold8'>Contact Us</h2>
+          <div className='grid sm:grid-cols-3 gap-8'>
             <div>
-              <h4 className='font-semibold text-xl mt-4'>Rasleen Kaur</h4>
-              <p className='sm:text-md text-sm'>Head, Investor Relations</p>
-              <a href='#' className='sm:text-md text-sm'>investor.relations@pbfintech.in </a>
+              <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#00B8D9] pb-2'>Write to us at:</h3>
+              <div>
+                <h4 className='font-semibold text-xl mt-4'>Rasleen Kaur</h4>
+                <p className='sm:text-md text-sm'>Head, Investor Relations</p>
+                <a href='#' className='sm:text-md text-sm'>investor.relations@pbfintech.in </a>
+              </div>
             </div>
-          </div>
-          <div>
-            <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#8777D9] pb-2'>Compliance officer:</h3>
-            <div className='grid gap-1'>
-              <h4 className='font-semibold text-xl mt-4'>Bhasker Joshi</h4>
-              <p className='sm:text-md text-sm'>Company Secretary & Compliance Officer</p>
-              <p className='sm:text-md text-sm'>complianceofficer@pbfintech.in</p>
-              <a className='sm:text-md text-sm' href='#'>Contact No. 0124- 4562907</a>
-              <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562902</a>
-              <p className='sm:text-md text-sm'>**For Redressal of Investor Grievances you may contact the Compliance Officer.</p>
+            <div>
+              <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#8777D9] pb-2'>Compliance officer:</h3>
+              <div className='grid gap-1'>
+                <h4 className='font-semibold text-xl mt-4'>Bhasker Joshi</h4>
+                <p className='sm:text-md text-sm'>Company Secretary & Compliance Officer</p>
+                <p className='sm:text-md text-sm'>complianceofficer@pbfintech.in</p>
+                <a className='sm:text-md text-sm' href='#'>Contact No. 0124- 4562907</a>
+                <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562902</a>
+                <p className='sm:text-md text-sm'>**For Redressal of Investor Grievances you may contact the Compliance Officer.</p>
+              </div>
             </div>
-          </div>
-          <div>
-            <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#36B37E] pb-2'>Registered address:</h3>
-            <div className='grid gap-1'>
-              <h4 className='font-semibold text-xl mt-4'>PB Fintech Limited</h4>
-              <p className='sm:text-md text-sm'>Plot 119, Sector 44, Gurugram- 122001, Haryana</p>
+            <div>
+              <h3 className='text-lg font--semibold text-gray-500 border-b-[3px] border-[#36B37E] pb-2'>Registered address:</h3>
+              <div className='grid gap-1'>
+                <h4 className='font-semibold text-xl mt-4'>PB Fintech Limited</h4>
+                <p className='sm:text-md text-sm'>Plot 119, Sector 44, Gurugram- 122001, Haryana</p>
 
-              <a className='sm:text-md text-sm' href='#'>Phone No: 0124-4562907</a>
-              <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562907</a>
+                <a className='sm:text-md text-sm' href='#'>Phone No: 0124-4562907</a>
+                <a className='sm:text-md text-sm' href='#'>Fax: 0124-4562907</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
       <div className='fixed bottom-8 w-full text-center'>
         <button class="px-6 py-3 text-white font-semibold bg-blue-500 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 animate-blink-shadow">
@@ -369,27 +431,27 @@ const relationArray = [
 ]
 const whyArray = [
   {
-    imageUrl:"/png/advisor.png",
-    alt:"advisor",
-    counts:"3 Lakh+",
-    title:"TRAINED ADVISORS"
+    imageUrl: "/png/advisor.png",
+    alt: "advisor",
+    counts: "3 Lakh+",
+    title: "TRAINED ADVISORS"
   },
   {
-    imageUrl:"/png/customer.png",
-    alt:"customer",
-    counts:"45 Lakh+",
-    title:"HAPPY CUSTOMERS"
+    imageUrl: "/png/customer.png",
+    alt: "customer",
+    counts: "45 Lakh+",
+    title: "HAPPY CUSTOMERS"
   },
   {
-    imageUrl:"/png/partner.png",
-    alt:"partner",
-    counts:"45+",
-    title:"INSURANCE PARTNERS"
+    imageUrl: "/png/partner.png",
+    alt: "partner",
+    counts: "45+",
+    title: "INSURANCE PARTNERS"
   },
   {
-    imageUrl:"/png/policy.png",
-    alt:"policy",
-    counts:"1 Crore+",
-    title:"POLICIES SOLD"
+    imageUrl: "/png/policy.png",
+    alt: "policy",
+    counts: "1 Crore+",
+    title: "POLICIES SOLD"
   },
 ]
