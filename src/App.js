@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className='sm:px-12 px-4 py-16 bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50'>
-        <h1 className='text-center sm:text-8xl text-2xl font-semibold'>Your Trusted <br /> Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full sm:w-[80px] sm:h-[80px] w-[50px] border-blue-800 p-1 border inline' /> Partner</h1>
+        <h1 className='text-center sm:text-8xl text-2xl font-semibold'>Your<span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text'> Trusted</span> <br />  Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full sm:w-[80px] sm:h-[80px] w-[50px] border-blue-800 p-1 border inline' /> Partner</h1>
         <p className='text-center sm:text-lg text-sm mt-5 text-gray-500 max-w-[800px] m-auto'>Smart Insurance For Smart People. Comprehensive Coverage, Exceptional Service. The Strength To Rebuild, The Power To Protect.</p>
         <div className='grid sm:grid-cols-3 max-w-[1250px] mx-auto mt-12'>
           <Cards>
@@ -72,10 +72,27 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='bg-[#f2f7ff] px-4 py-6'>
+      <div className=' px-4 py-16'>
+        <div className='max-w-[1250px] mx-auto'>
+        <h2 className='sm:text-5xl text-2xl font-semibold text-center mb-14'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text'> PB Fintech?</span></h2>
+        <div className='grid sm:grid-cols-4 gap-4'>
+          {whyArray?.map((item,index)=>{
+            return(
+          <div className='text-center' key={index}>
+            <img src={item?.imageUrl} alt={item?.alt} width={80} height={80} className='mx-auto mb-4 w-[80px] w-[50px]' />
+            <p className='font-semibold sm:text-2xl text-xl my-2'>{item?.counts}</p>
+            <p className='sm:text-md text-sm'>{item?.title}</p>
+          </div>
+
+            )
+          })}
+        </div>
+        </div>
+      </div>
+      <div className='px-4 sm:py-16 py-6 bg-gradient-to-r from-blue-100 to-purple-100'>
         <div className='max-w-[1250px] mx-auto grid sm:grid-cols-[1fr_1.2fr] gap-16 items-center'>
           <div>
-            <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'>Leveraging the power of technology, data and innovation</h2>
+            <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'><span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text font-semibold'>Leveraging</span> the power of technology, data and innovation</h2>
             <p className='sm:text-xl text-gray-500 mt-4 border-l-2 pl-2 border-blue-500'>Our Policy platform offerings Address the large and highly under penetrated online insurance and lending markets</p>
           </div>
           <div>
@@ -108,8 +125,9 @@ function App() {
           </div>
         </div>
       </div>
+      <div className=''>
       <div className='max-w-[1250px] mx-auto px-4 py-8'>
-        <h2 className='text-3xl font-semibold'>We're Offerings</h2>
+        <h2 className='sm:text-5xl text-2xl sm:text-left text-center font-semibold sm:py-12'>We're <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Offerings</span></h2>
         <div className='flex gap-8 flex-wrap mt-8'>
           {offeringArray?.map((item, index) => {
             return (
@@ -123,8 +141,9 @@ function App() {
           })}
         </div>
       </div>
+      </div>
       <div className='max-w-[1250px] mx-auto my-12'>
-        <h2 className='sm:text-5xl text-3xl font-bold text-center'>What sets us apart</h2>
+        <h2 className='sm:text-5xl text-3xl font-bold text-center'>What <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic font-semibold'> sets us</span> apart</h2>
         <div className='sm:mt-20 mt-12'>
           {apartArray?.map((item, index) => {
             return (
@@ -158,6 +177,7 @@ function App() {
           </div>
         </div>
       </div>
+      <div className='bg-gradient-to-r from-blue-100 to-purple-100'>
       <div className='sm:p-12 p-4 max-w-[1350px] mx-auto'>
         <h2 className='sm:text-4xl text-2xl mb- font-semibold8'>Contact Us</h2>
         <div className='grid sm:grid-cols-3 gap-8'>
@@ -191,6 +211,7 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
       </div>
       <div className='fixed bottom-8 w-full text-center'>
         <button class="px-6 py-3 text-white font-semibold bg-blue-500 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 animate-blink-shadow">
@@ -344,5 +365,31 @@ const relationArray = [
     title: "Credit Score Customers",
     count: "47.7 million",
     time: "Till September 2024"
+  },
+]
+const whyArray = [
+  {
+    imageUrl:"/png/advisor.png",
+    alt:"advisor",
+    counts:"3 Lakh+",
+    title:"TRAINED ADVISORS"
+  },
+  {
+    imageUrl:"/png/customer.png",
+    alt:"customer",
+    counts:"45 Lakh+",
+    title:"HAPPY CUSTOMERS"
+  },
+  {
+    imageUrl:"/png/partner.png",
+    alt:"partner",
+    counts:"45+",
+    title:"INSURANCE PARTNERS"
+  },
+  {
+    imageUrl:"/png/policy.png",
+    alt:"policy",
+    counts:"1 Crore+",
+    title:"POLICIES SOLD"
   },
 ]
