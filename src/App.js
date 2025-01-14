@@ -5,7 +5,7 @@ import Cards from './components/card-ui/Card';
 function App() {
   return (
     <>
-      <div className='sm:px-12 px-4 py-16 bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50'>
+      {/* <div className='sm:px-12 px-4 py-16 bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50'>
         <h1 className='text-center sm:text-8xl text-2xl font-semibold'>Your<span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text'> Trusted</span> <br />  Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full sm:w-[80px] sm:h-[80px] w-[50px] border-blue-800 p-1 border inline' /> Partner</h1>
         <p className='text-center sm:text-lg text-sm mt-5 text-gray-500 max-w-[800px] m-auto'>Smart Insurance For Smart People. Comprehensive Coverage, Exceptional Service. The Strength To Rebuild, The Power To Protect.</p>
         <div className='grid sm:grid-cols-3 max-w-[1250px] mx-auto mt-12'>
@@ -25,12 +25,6 @@ function App() {
               <img src='/MensHealth.jpeg' className='rounded-xl h-[180px] w-full object-cover' />
               <div>
                 <div className='mt-4 sm:flex justify-between items-center'>
-                  {/* <div className='flex gap-1'>
-                    <div className='px-3 py-1.5 rounded-full w-fit bg-blue-600 border text-xs text-white font-semibold'>Health</div>
-                    <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Home Loan</div>
-                    <div className='px-3 py-1.5 rounded-full w-fit border text-xs font-semibold'>Car Loan</div>
-                  </div>
-                  <div className='font-bold text-xs sm:mt-0 mt-2'>₹599/month</div> */}
                 </div>
                 <h3 className='mt-4 font-bold text-sm'>Health Insurance</h3>
                 <p className='text-xs font-semibold text-gray-400 my-1 line-clamp-2'>The Strength To Rebuild, The Power To Protect. Trusted By Generations. Protecting Your Legacy.</p>
@@ -48,7 +42,7 @@ function App() {
                   <img src='/calender.svg' width={24} />
                 </div>
                 <div>
-                  {/* <p className='text-green-700 text-sm font-semibold'>15.4% Seat available</p> */}
+                
                   <p className='text-gray-500 font-semibold text-lg'>Upcoming Events</p>
                   <p>
                     <span className='font-bold text-xl'>9035 </span>
@@ -70,6 +64,30 @@ function App() {
               </div>
             </Cards>
           </div>
+        </div>
+      </div> */}
+      <div className='bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50 sm:flex justify-start items-center sm:pb-12 sm:h-screen px-4'>
+        <div className='max-w-[1250px] mx-auto sm:py-16 py-12 w-full grid sm:grid-cols-[2fr_1fr] items-center justify-between'>
+        <div className='max-w-[700px] w-full'>
+          <h1 className='sm:text-6xl text-4xl sm:text-left text-center tracking wider'>The <span className='font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent'> Futuristic Way</span> To Buy Insurance</h1>
+          <p className='sm:mt-16 mt-4 sm:text-2xl text-lg sm:text-left text-center'>Get a quote or compare</p>
+          <div className='grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 mt-6'>
+            {policiesArray?.map((item, index) => {
+              return (
+                <div key={index} className='cursor-pointer w-fit from-blue-500 via-purple-500 to-purple-400 p-[2px] rounded-xl m-auto'>
+
+                  <Cards className={"w-[120px] h-[120px] flex place-content-center bg-white rounded-lg p-4 border-[3px] border-white shadow hover:border-[#2a6dcf]"}>
+                    <img src={item?.imageUrl} alt={item?.alt} width={60} className='m-auto' />
+                  </Cards>
+                  <p className='text-center mt-2 text-xl'>{item?.title}</p>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+        <div className='text-right ml-auto'>
+        <img src='/png/robot.png' alt='robot' className='sm:w-[240px] w-[180px]' />
+        </div>
         </div>
       </div>
       <div class="max-w-[1250px] mx-auto sm:p-8 p-4">
@@ -453,5 +471,32 @@ const whyArray = [
     alt: "policy",
     counts: "1 Crore+",
     title: "POLICIES SOLD"
+  },
+]
+const policiesArray = [
+  {
+    imageUrl: "/png/bike.png",
+    alt: "bike",
+    title: "Bike"
+  },
+  {
+    imageUrl: "/png/car.png",
+    alt: "car",
+    title: "Car"
+  },
+  {
+    imageUrl: "/png/health.png",
+    alt: "health",
+    title: "Health"
+  },
+  {
+    imageUrl: "/png/term.png",
+    alt: "term",
+    title: "Term"
+  },
+  {
+    imageUrl: "/png/arrow.png",
+    alt: "arrow",
+    title: "View All"
   },
 ]
