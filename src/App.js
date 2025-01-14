@@ -98,7 +98,7 @@ function App() {
 
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="text-center p-4 bg-white rounded-lg shadow-sm">
-            <img src="/png/policy-bazar.png" alt="Policy Sazar Logo" class="w-36 mx-auto " />
+            <img src="/png/policy-bazar.png" alt="Policy Sazar Logo" class="w-36 mx-auto" />
             <p class="text-gray-600 mt-4">An online platform for consumers and insurer partners to buy and sell insurance products.</p>
           </div>
           <div class="text-center p-4 bg-white rounded-lg shadow-sm h-full">
