@@ -20,11 +20,11 @@ const InsuranceProducts = () => {
 
                     <div key={index} className="overflow-hidden">
                         {selectedTab === items?.tabName &&
-                            <div className="flex gap-4 mx-auto sm:justify-center overflow-x-auto" style={{scrollbarWidth:"none"}}>
+                            <div className="flex flex-wrap gap-4 mx-auto justify-center">
                                 {items?.collection?.map((value, ind) => {
                                     return (
 
-                                        <Cards key={ind} className={"min-w-[170px] w-full sm:shadow-xl shadow-none"}>
+                                        <Cards key={ind} className={"min-w-[140px] max-w-[140px] w-full sm:shadow-xl shadow-none"}>
                                             <img src={value?.imageUrl} alt="image" className="w-[52px] h-[52px] mx-auto" />
                                             <p className="text-center text-[16px] text-gray-500">{value?.title}</p>
                                         </Cards>

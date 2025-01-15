@@ -72,12 +72,12 @@ function App() {
           <div className='max-w-[700px] w-full'>
             <h1 className='sm:text-6xl text-4xl sm:text-left text-center tracking wider'>The <span className='font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent italic'> Futuristic Way</span> To Buy Insurance</h1>
             <p className='sm:mt-16 mt-4 sm:text-2xl text-lg sm:text-left text-center'>Get a quote or compare</p>
-            <div className='grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 mt-6'>
+            <div className='flex flex-wrap gap-4 mt-6'>
               {policiesArray?.map((item, index) => {
                 return (
                   <div key={index} className='cursor-pointer w-fit from-blue-500 via-purple-500 to-purple-400 p-[2px] rounded-xl m-auto'>
 
-                    <Cards className={"w-[120px] h-[120px] flex place-content-center bg-white rounded-lg p-4 border-[3px] border-white shadow hover:border-[#2a6dcf]"}>
+                    <Cards className={"sm:w-[120px] w-[80px] sm:h-[120px] w-[80px] flex place-content-center bg-white rounded-lg p-4 border-[3px] border-white shadow hover:border-[#2a6dcf]"}>
                       <img src={item?.imageUrl} alt={item?.alt} width={60} className='m-auto' />
                     </Cards>
                     <p className='text-center mt-2 text-xl'>{item?.title}</p>
