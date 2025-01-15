@@ -66,8 +66,8 @@ function App() {
           </div>
         </div>
       </div> */}
-      <div className='bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50 sm:flex justify-start items-center sm:pb-12 sm:h-screen px-4'>
-        <div className='max-w-[1250px] mx-auto sm:py-16 py-12 w-full grid sm:grid-cols-[2fr_1fr] items-center justify-between'>
+      <div className='bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50 sm:flex justify-start items-center py-16 px-4 relative h-fit overflow-hidden'>
+        <div className='max-w-[1250px] mx-auto sm:py-16 py-12 w-full grid sm:grid-cols-[2fr_1fr] items-center justify-between z-[2]'>
         <div className='max-w-[700px] w-full'>
           <h1 className='sm:text-6xl text-4xl sm:text-left text-center tracking wider'>The <span className='font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent'> Futuristic Way</span> To Buy Insurance</h1>
           <p className='sm:mt-16 mt-4 sm:text-2xl text-lg sm:text-left text-center'>Get a quote or compare</p>
@@ -89,6 +89,12 @@ function App() {
         <img src='/png/robot.png' alt='robot' className='sm:w-[240px] w-[180px]' />
         </div>
         </div>
+        <img src='/png/star.png' alt='star' className='absolute left-10 top-12 w-[10%] custom-spin duration-300' />
+        
+        <img src='/png/circle.png' alt='star' className='absolute left-[42%] top-[28%] w-[18%] custom-spin2 duration-300 custom-pulse' />
+        <img src='/png/star-blue.png' alt='star' className='absolute left-28 bottom-16 w-[8%] custom-spin2 duration-300' />
+        <img src='/png/star-blue.png' alt='star' className='absolute right-10 top-12 w-[18%] custom-spin2 duration-300' />
+     
       </div>
       <div class="max-w-[1250px] mx-auto sm:p-8 p-4">
         <div class="text-center mb-8">
