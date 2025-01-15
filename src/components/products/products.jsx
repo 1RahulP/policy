@@ -5,7 +5,7 @@ const InsuranceProducts = () => {
     const [selectedTab, setSelectedTab] = React.useState("Bike");
     return (
         <div className="mt-6">
-            <div className=" flex max-w-[350px] mx-auto justify-between gap-4 text-center">
+            <div className=" flex sm:max-w-[350px] max-w-[240px] mx-auto justify-between gap-4 text-center">
                 {productsTab?.map((item, index) => {
                     return (
                         <div key={index} className="h-fit">
@@ -24,9 +24,9 @@ const InsuranceProducts = () => {
                                 {items?.collection?.map((value, ind) => {
                                     return (
 
-                                        <Cards key={ind} className={"min-w-[140px] max-w-[140px] w-full sm:shadow-xl shadow-none"}>
+                                        <Cards key={ind} className={"min-w-[140px] !max-w-[145px] sm:!max-w-[180px] w-full !shadow-none sm:!p-4 !p-2"}>
                                             <img src={value?.imageUrl} alt="image" className="w-[52px] h-[52px] mx-auto" />
-                                            <p className="text-center text-[16px] text-gray-500">{value?.title}</p>
+                                            <p className="text-center text-[16px] text-gray-500 mt-1">{value?.title}</p>
                                         </Cards>
                                     )
                                 })}
@@ -81,28 +81,28 @@ const productsTab = [
         tabName: "Health",
         collection: [
             {
-                imageUrl: "/products/hand.png",
-                title: "Third Party"
+                imageUrl: "/products/medical.png",
+                title: "Mediclaim"
             },
             {
-                imageUrl: "/products/comprehensive.png",
-                title: "Comprehensive"
+                imageUrl: "/products/citizen.png",
+                title: "Senior Citizen"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/family.png",
+                title: "Family Plans"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/maternity.png",
+                title: "Maternity Plans"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/illness.png",
+                title: "Critical Illness"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/accident.png",
+                title: "Personal Accident"
             },
         ]
     },
@@ -110,33 +110,30 @@ const productsTab = [
         tabName: "Life",
         collection: [
             {
-                imageUrl: "/products/hand.png",
-                title: "Third Party"
+                imageUrl: "/products/term.png",
+                title: "Term"
             },
             {
-                imageUrl: "/products/comprehensive.png",
-                title: "Comprehensive"
+                imageUrl: "/products/umbrella.png",
+                title: "ULIPs"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/saving.png",
+                title: "Savings"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/pension.png",
+                title: "Pension Plans"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/child.png",
+                title: "Child Insurance"
             },
             {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
+                imageUrl: "/products/money.png",
+                title: "Money Back"
             },
-            {
-                imageUrl: "/products/damage.png",
-                title: "Own Damage"
-            },
+           
         ]
     },
 

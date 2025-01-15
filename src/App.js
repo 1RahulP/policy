@@ -1,6 +1,7 @@
 
 import './App.css';
 import Cards from './components/card-ui/Card';
+import InsurancePartners from './components/partners/partners';
 import InsuranceProducts from './components/products/products';
 
 function App() {
@@ -121,6 +122,48 @@ function App() {
           <InsuranceProducts />
         </div>
       </div>
+      {/* partners */}
+      <div className='max-w-[1250px] mx-auto sm:py-16 py-8 px-4'>
+          <h2 className='sm:text-5xl text-2xl font-semibold text-center mb-6'>Our <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Partners</span></h2>
+          <InsurancePartners />
+        </div>
+        <div className='px-4 sm:py-16 py-6 bg-gradient-to-r from-blue-100 to-purple-100'>
+        <div className='max-w-[1250px] mx-auto grid sm:grid-cols-[1fr_1.2fr] gap-16 items-center'>
+          <div>
+            <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'><span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text font-semibold italic'>Leveraging</span> the power of technology, data and innovation</h2>
+            <p className='sm:text-xl text-gray-500 mt-4 border-l-2 pl-2 border-blue-500'>Our Policy platform offerings Address the large and highly under penetrated online insurance and lending markets</p>
+          </div>
+          <div>
+            <div className='grid sm:grid-cols-2 gap-8'>
+              <Cards className={"p-6"}>
+                <div>
+                  <img src='/easy.svg' width={60} />
+                </div>
+                <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
+                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
+              </Cards>
+              <Cards className={"p-6"}>
+                <div>
+                  <img src='/trans.svg' width={60} />
+                </div>
+                <h3 className='text-2xl font-semibold mt-4'>We seek to increase transparency for consumers</h3>
+                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>Through our consumer-centric approach, we seek to enable online research-based purchases of insurance and lending products. This helps consumers to make informed choices.</p>
+              </Cards>
+            </div>
+            <div className='mt-8'>
+              <Cards className={"max-w-full p-6"}>
+                <div>
+                  <img src='/limited.svg' width={60} />
+                </div>
+                <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
+                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
+              </Cards>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       <div class="max-w-[1250px] mx-auto sm:p-8 p-4 pb-8">
         <div class="text-center mb-8">
           <h1 class="sm:text-4xl text-xl font-semibold text-blue-600 mt-4">
@@ -183,42 +226,7 @@ function App() {
       </div>
 
 
-      <div className='px-4 sm:py-16 py-6 bg-gradient-to-r from-blue-100 to-purple-100'>
-        <div className='max-w-[1250px] mx-auto grid sm:grid-cols-[1fr_1.2fr] gap-16 items-center'>
-          <div>
-            <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'><span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text font-semibold italic'>Leveraging</span> the power of technology, data and innovation</h2>
-            <p className='sm:text-xl text-gray-500 mt-4 border-l-2 pl-2 border-blue-500'>Our Policy platform offerings Address the large and highly under penetrated online insurance and lending markets</p>
-          </div>
-          <div>
-            <div className='grid sm:grid-cols-2 gap-8'>
-              <Cards className={"p-6"}>
-                <div>
-                  <img src='/easy.svg' width={60} />
-                </div>
-                <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
-                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
-              </Cards>
-              <Cards className={"p-6"}>
-                <div>
-                  <img src='/trans.svg' width={60} />
-                </div>
-                <h3 className='text-2xl font-semibold mt-4'>We seek to increase transparency for consumers</h3>
-                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>Through our consumer-centric approach, we seek to enable online research-based purchases of insurance and lending products. This helps consumers to make informed choices.</p>
-              </Cards>
-            </div>
-            <div className='mt-8'>
-              <Cards className={"max-w-full p-6"}>
-                <div>
-                  <img src='/limited.svg' width={60} />
-                </div>
-                <h3 className='text-2xl font-semibold mt-4'>Get easy access to insurance, credit & other financial products</h3>
-                <p className='mt-3 line-clamp-5 sm:text-lg text-gray-500'>We aim to create awareness amongst Indian households about the financial impact of death, disease, and damage.</p>
-              </Cards>
-            </div>
-
-          </div>
-        </div>
-      </div>
+    
       <div className=''>
         <div className='max-w-[1250px] mx-auto px-4 py-8'>
           <h2 className='sm:text-5xl text-2xl sm:text-left text-center font-semibold sm:py-12'>We're <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Offerings</span></h2>
