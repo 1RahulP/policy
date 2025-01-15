@@ -1,6 +1,7 @@
 
 import './App.css';
 import Cards from './components/card-ui/Card';
+import InsuranceProducts from './components/products/products';
 
 function App() {
   return (
@@ -67,40 +68,63 @@ function App() {
         </div>
       </div> */}
       <div className='bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50 sm:flex justify-start items-center py-16 px-4 relative h-fit overflow-hidden'>
-        <div className='max-w-[1250px] mx-auto sm:py-16 py-12 w-full grid sm:grid-cols-[2fr_1fr] items-center justify-between z-[2]'>
-        <div className='max-w-[700px] w-full'>
-          <h1 className='sm:text-6xl text-4xl sm:text-left text-center tracking wider'>The <span className='font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent'> Futuristic Way</span> To Buy Insurance</h1>
-          <p className='sm:mt-16 mt-4 sm:text-2xl text-lg sm:text-left text-center'>Get a quote or compare</p>
-          <div className='grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 mt-6'>
-            {policiesArray?.map((item, index) => {
-              return (
-                <div key={index} className='cursor-pointer w-fit from-blue-500 via-purple-500 to-purple-400 p-[2px] rounded-xl m-auto'>
+        <div className='max-w-[1250px] mx-auto sm:py-16 w-full grid sm:grid-cols-[2fr_1fr] items-center justify-between z-[2]'>
+          <div className='max-w-[700px] w-full'>
+            <h1 className='sm:text-6xl text-4xl sm:text-left text-center tracking wider'>The <span className='font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent italic'> Futuristic Way</span> To Buy Insurance</h1>
+            <p className='sm:mt-16 mt-4 sm:text-2xl text-lg sm:text-left text-center'>Get a quote or compare</p>
+            <div className='grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 mt-6'>
+              {policiesArray?.map((item, index) => {
+                return (
+                  <div key={index} className='cursor-pointer w-fit from-blue-500 via-purple-500 to-purple-400 p-[2px] rounded-xl m-auto'>
 
-                  <Cards className={"w-[120px] h-[120px] flex place-content-center bg-white rounded-lg p-4 border-[3px] border-white shadow hover:border-[#2a6dcf]"}>
-                    <img src={item?.imageUrl} alt={item?.alt} width={60} className='m-auto' />
-                  </Cards>
-                  <p className='text-center mt-2 text-xl'>{item?.title}</p>
+                    <Cards className={"w-[120px] h-[120px] flex place-content-center bg-white rounded-lg p-4 border-[3px] border-white shadow hover:border-[#2a6dcf]"}>
+                      <img src={item?.imageUrl} alt={item?.alt} width={60} className='m-auto' />
+                    </Cards>
+                    <p className='text-center mt-2 text-xl'>{item?.title}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          <div className='text-right ml-auto'>
+            <img src='/png/robot.png' alt='robot' className='sm:w-[240px] w-[180px]' />
+          </div>
+        </div>
+        <img src='/png/star.png' alt='star' className='absolute left-10 top-12 w-[10%] custom-spin duration-300' />
+
+        <img src='/png/circle.png' alt='star' className='absolute sm:left-[42%] left-[25%] top-[28%] sm:w-[18%] w-[50%] custom-spin2 duration-300 custom-pulse' />
+        <img src='/png/star-blue.png' alt='star' className='absolute sm:left-28 left-12 sm:bottom-16 bottom-24 sm:w-[8%] w-[25%] custom-spin2 duration-300' />
+        <img src='/png/star-blue.png' alt='star' className='absolute right-10 top-8 w-[18%] custom-spin2 duration-300' />
+
+      </div>
+      <div className=' px-4 sm:py-16 py-8'>
+        <div className='max-w-[1250px] mx-auto'>
+          <h2 className='sm:text-5xl text-2xl font-semibold text-center sm:mb-14 mb-8'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> PB Fintech?</span></h2>
+          <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
+            {whyArray?.map((item, index) => {
+              return (
+                <div className='text-center mt-2' key={index}>
+                  <img src={item?.imageUrl} alt={item?.alt} width={80} height={80} className='mx-auto sm:mb-4 mb-2 sm:w-[80px] w-[40px]' />
+                  <p className='font-semibold sm:text-2xl text-lg sm:my-2'>{item?.counts}</p>
+                  <p className='sm:text-md text-xs'>{item?.title}</p>
                 </div>
+
               )
             })}
           </div>
         </div>
-        <div className='text-right ml-auto'>
-        <img src='/png/robot.png' alt='robot' className='sm:w-[240px] w-[180px]' />
-        </div>
-        </div>
-        <img src='/png/star.png' alt='star' className='absolute left-10 top-12 w-[10%] custom-spin duration-300' />
-        
-        <img src='/png/circle.png' alt='star' className='absolute left-[42%] top-[28%] w-[18%] custom-spin2 duration-300 custom-pulse' />
-        <img src='/png/star-blue.png' alt='star' className='absolute left-28 bottom-16 w-[8%] custom-spin2 duration-300' />
-        <img src='/png/star-blue.png' alt='star' className='absolute right-10 top-12 w-[18%] custom-spin2 duration-300' />
-     
       </div>
-      <div class="max-w-[1250px] mx-auto sm:p-8 p-4">
+      {/* types */}
+      <div className='bg-gradient-to-r from-blue-100 to-purple-100'>
+        <div className='max-w-[1250px] mx-auto sm:py-16 py-8 px-4'>
+          <h2 className='sm:text-5xl text-2xl font-semibold text-center'>Types Of <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Insurance Products</span></h2>
+          <InsuranceProducts />
+        </div>
+      </div>
+      <div class="max-w-[1250px] mx-auto sm:p-8 p-4 pb-8">
         <div class="text-center mb-8">
-          <img src="/insurance.png" alt="PBP Logo" class="mx-auto sm:w-32 w-14 h-auto" />
           <h1 class="sm:text-4xl text-xl font-semibold text-blue-600 mt-4">
-            PBP Fintech & Insurance
+            About<span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Us</span>
           </h1>
           <p class="sm:text-lg text-gray-700 mt-2">
             An Indian company licensed to provide online marketing, consulting, and technology services to insurers and lending partners.
@@ -158,27 +182,11 @@ function App() {
         </div>
       </div>
 
-      <div className=' px-4 py-16'>
-        <div className='max-w-[1250px] mx-auto'>
-          <h2 className='sm:text-5xl text-2xl font-semibold text-center mb-14'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text'> PB Fintech?</span></h2>
-          <div className='grid sm:grid-cols-4 gap-4'>
-            {whyArray?.map((item, index) => {
-              return (
-                <div className='text-center' key={index}>
-                  <img src={item?.imageUrl} alt={item?.alt} width={80} height={80} className='mx-auto mb-4 w-[80px] w-[50px]' />
-                  <p className='font-semibold sm:text-2xl text-xl my-2'>{item?.counts}</p>
-                  <p className='sm:text-md text-sm'>{item?.title}</p>
-                </div>
 
-              )
-            })}
-          </div>
-        </div>
-      </div>
       <div className='px-4 sm:py-16 py-6 bg-gradient-to-r from-blue-100 to-purple-100'>
         <div className='max-w-[1250px] mx-auto grid sm:grid-cols-[1fr_1.2fr] gap-16 items-center'>
           <div>
-            <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'><span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text font-semibold'>Leveraging</span> the power of technology, data and innovation</h2>
+            <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'><span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text font-semibold italic'>Leveraging</span> the power of technology, data and innovation</h2>
             <p className='sm:text-xl text-gray-500 mt-4 border-l-2 pl-2 border-blue-500'>Our Policy platform offerings Address the large and highly under penetrated online insurance and lending markets</p>
           </div>
           <div>
@@ -299,11 +307,11 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='fixed bottom-8 w-full text-center'>
+      {/* <div className='fixed bottom-8 w-full text-center'>
         <button class="px-6 py-3 text-white font-semibold bg-blue-500 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 animate-blink-shadow">
           Join Now
         </button>
-      </div>
+      </div> */}
     </>
   );
 }
