@@ -5,7 +5,7 @@ const InsurancePartners = () => {
     const [selectedTab, setSelectedTab] = React.useState("Bike");
     return (
         <div className="mt-6">
-            <div className=" flex sm:max-w-[350px] max-w-[240px] mx-auto justify-between gap-4 text-center">
+            <div className=" flex sm:max-w-[350px] max-w-[310px] mx-auto justify-between gap-4 text-center">
                 {productsTab?.map((item, index) => {
                     return (
                         <div key={index} className="h-fit">

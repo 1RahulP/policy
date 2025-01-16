@@ -24,8 +24,8 @@ const InsuranceProducts = () => {
                                 {items?.collection?.map((value, ind) => {
                                     return (
 
-                                        <Cards key={ind} className={"min-w-[140px] !max-w-[145px] sm:!max-w-[180px] w-full !shadow-none sm:!p-4 !p-2"}>
-                                            <img src={value?.imageUrl} alt="image" className="w-[52px] h-[52px] mx-auto" />
+                                        <Cards key={ind} className={"min-w-[140px] !max-w-[145px] sm:!max-w-[180px] w-full !shadow-none sm:!p-4 !p-2 !py-4"}>
+                                            <img src={value?.imageUrl} alt="image" className=" sm:h-[44px] h-[36px] mx-auto" />
                                             <p className="text-center text-[16px] text-gray-500 mt-1">{value?.title}</p>
                                         </Cards>
                                     )

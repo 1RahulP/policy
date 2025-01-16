@@ -63,3 +63,19 @@ transform: rotate(360deg);
     opacity: 0;
   } */
 }
+.gradient-bg {
+  background: linear-gradient(45deg, #352170, #953179, #2aa1aa);
+  background-size: 400% 400%;
+  animation: gradient-move 6s ease infinite;
+}
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
