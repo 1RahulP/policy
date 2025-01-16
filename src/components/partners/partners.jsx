@@ -184,5 +184,14 @@ const productsTab = [
             
         ]
     },
-
+    {
+        tabName: "Other",
+        collection: [
+           
+            {
+                imageUrl: "/products/HDFC_Life_Insurance.webp",
+            },
+            
+        ]
+    },
 ]

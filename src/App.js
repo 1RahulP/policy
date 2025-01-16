@@ -7,70 +7,9 @@ import InsuranceProducts from './components/products/products';
 function App() {
   return (
     <>
-      {/* <div className='sm:px-12 px-4 py-16 bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50'>
-        <h1 className='text-center sm:text-8xl text-2xl font-semibold'>Your<span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text'> Trusted</span> <br />  Insurance  <img src='/insurance.png' width={80} height={80} className='rounded-full sm:w-[80px] sm:h-[80px] w-[50px] border-blue-800 p-1 border inline' /> Partner</h1>
-        <p className='text-center sm:text-lg text-sm mt-5 text-gray-500 max-w-[800px] m-auto'>Smart Insurance For Smart People. Comprehensive Coverage, Exceptional Service. The Strength To Rebuild, The Power To Protect.</p>
-        <div className='grid sm:grid-cols-3 max-w-[1250px] mx-auto mt-12'>
-          <Cards>
-            <h2 className='font-semibold sm:text-4xl text-2xl mt-2'>Select Best Plan For Your Future</h2>
-            <p className='text-xs text-gray-400 mt-4 font-semibold ml-2'>Making Accidents Less Of A Hassle. Your Safety Gear On The Road. Ride Worry-Free With Us</p>
-            <p className='text-xs text-gray-400 font-semibold mb-2 ml-2'>A Promise Of Security On Wheels.</p>
-            <div className='flex'>
-              <a href='#' className='font-semibold underline whitespace-nowrap pl-2'>See Plans</a>
-              <div>
-                <img src='/family.png' className='h-[220px] object-cover' />
-              </div>
-            </div>
-          </Cards>
-          <div className='py-6'>
-            <Cards className={""}>
-              <img src='/MensHealth.jpeg' className='rounded-xl h-[180px] w-full object-cover' />
-              <div>
-                <div className='mt-4 sm:flex justify-between items-center'>
-                </div>
-                <h3 className='mt-4 font-bold text-sm'>Health Insurance</h3>
-                <p className='text-xs font-semibold text-gray-400 my-1 line-clamp-2'>The Strength To Rebuild, The Power To Protect. Trusted By Generations. Protecting Your Legacy.</p>
-                <div className='flex gap-1 items-center mt-4'>
-                  <img src='/star.svg' width={20} />
-                  <span className='font-bold text-xs'>4.9(289 reviews)</span>
-                </div>
-              </div>
-            </Cards>
-          </div>
-          <div>
-            <Cards>
-              <div className='flex gap-4 sm:items-start items-center'>
-                <div className='bg-[#d1f1ff] rounded-xl h-fit p-2'>
-                  <img src='/calender.svg' width={24} />
-                </div>
-                <div>
-                
-                  <p className='text-gray-500 font-semibold text-lg'>Upcoming Events</p>
-                  <p>
-                    <span className='font-bold text-xl'>9035 </span>
-                    <span className='font-semibold text-gray-500 sm:text-md text-sm'>peple are coming</span>
-                  </p>
-                </div>
-              </div>
-            </Cards>
-            <Cards className={"mt-4"}>
-              <div>
-                <div className='bg-[#d1deff] h-fit rounded-full p-3 w-fit'>
-                  <img src='/secure.svg' width={28} />
-                </div>
-                <div className='mt-4'>
-                  <h3 className='font-bold text-lg'>Secure your family</h3>
-                  <p className='text-xs font-semibold mt-2 mb-4 text-semibold text-gray-400 line-clamp-3'>Comprehensive Coverage, Exceptional Service. Security Through Every Season. Where Protection Meets Affordability. Drive Without Worry, Insured With Us.</p>
-                  <a href='#' className='underline font-bold'>Explore More</a>
-                </div>
-              </div>
-            </Cards>
-          </div>
-        </div>
-      </div> */}
       <div className='bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50 sm:flex justify-start items-center py-16 px-4 relative h-fit overflow-hidden'>
         <div className='max-w-[1250px] mx-auto sm:py-16 w-full grid sm:grid-cols-[2fr_1fr] items-center justify-between z-[2]'>
-          <div className='max-w-[700px] w-full'>
+          <div className='max-w-[650px] w-full'>
             <h1 className='sm:text-6xl text-4xl sm:text-left text-center tracking wider'>The <span className='font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent italic'> Futuristic Way</span> To Buy Insurance</h1>
             <p className='sm:mt-16 mt-4 sm:text-2xl text-lg sm:text-left text-center'>Get a quote or compare</p>
             <div className='flex flex-wrap gap-4 mt-6'>
@@ -100,7 +39,7 @@ function App() {
       </div>
       <div className=' px-4 sm:py-16 py-8'>
         <div className='max-w-[1250px] mx-auto'>
-          <h2 className='sm:text-5xl text-2xl font-semibold text-center sm:mb-14 mb-8'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> PB Fintech?</span></h2>
+          <h2 className='sm:text-5xl text-2xl font-semibold text-center sm:mb-14 mb-8'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> PBP Fintech?</span></h2>
           <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
             {whyArray?.map((item, index) => {
               return (
@@ -124,10 +63,10 @@ function App() {
       </div>
       {/* partners */}
       <div className='max-w-[1250px] mx-auto sm:py-16 py-8 px-4'>
-          <h2 className='sm:text-5xl text-2xl font-semibold text-center mb-6'>Our <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Partners</span></h2>
-          <InsurancePartners />
-        </div>
-        <div className='px-4 sm:py-16 py-6 bg-gradient-to-r from-blue-100 to-purple-100'>
+        <h2 className='sm:text-5xl text-2xl font-semibold text-center mb-6'>Our <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Partners</span></h2>
+        <InsurancePartners />
+      </div>
+      <div className='px-4 sm:py-16 py-6 bg-gradient-to-r from-blue-100 to-purple-100'>
         <div className='max-w-[1250px] mx-auto grid sm:grid-cols-[1fr_1.2fr] gap-16 items-center'>
           <div>
             <h2 className='font-[400] leading-normal sm:text-5xl text-3xl'><span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text font-semibold italic'>Leveraging</span> the power of technology, data and innovation</h2>
@@ -221,26 +160,6 @@ function App() {
             <div class="p-4 bg-white rounded-lg shadow-md border bg-gradient-to-r from-blue-100 to-purple-100">
               <h4 class="text-lg font-semibold text-blue-800">HDFC Secretariat for Mutual Fund SIP</h4>
             </div>
-          </div>
-        </div>
-      </div>
-
-
-    
-      <div className=''>
-        <div className='max-w-[1250px] mx-auto px-4 py-8'>
-          <h2 className='sm:text-5xl text-2xl sm:text-left text-center font-semibold sm:py-12'>We're <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Offerings</span></h2>
-          <div className='flex gap-8 flex-wrap mt-8'>
-            {offeringArray?.map((item, index) => {
-              return (
-                <div key={index} className='w-[140px]'>
-                  <div className='bg-[#F2F7FF] rounded-xl p-2 h-[80px]'>
-                    <img src={item?.imageUrl} alt={item?.alt} width={60} className='mx-auto' />
-                  </div>
-                  <p className='text-center whitespace-normal mt-2'>{item?.name}</p>
-                </div>
-              )
-            })}
           </div>
         </div>
       </div>
@@ -516,9 +435,9 @@ const policiesArray = [
     alt: "term",
     title: "Term"
   },
-  {
-    imageUrl: "/png/arrow.png",
-    alt: "arrow",
-    title: "View All"
-  },
+  // {
+  //   imageUrl: "/png/arrow.png",
+  //   alt: "arrow",
+  //   title: "View All"
+  // },
 ]
