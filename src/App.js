@@ -5,9 +5,15 @@ import InsurancePartners from './components/partners/partners';
 import InsuranceProducts from './components/products/products';
 
 function App() {
+  const scrollToProduct = () =>{
+    const product = document.getElementById("product");
+    product.scrollIntoView({
+      behavior:"smooth"
+    })
+  }
   return (
     <>
-      <div className='bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50 sm:flex justify-start items-center sm:pt-16 pt-28 pb-16 px-4 relative h-fit overflow-hidden'>
+      <div id='home' className='bg-gradient-to-r from-blue-200 via-[#f5deb32b] to-blue-50 sm:flex justify-start items-center sm:pt-16 pt-28 pb-16 px-4 relative h-fit overflow-hidden'>
         <div className='max-w-[1250px] mx-auto sm:py-16 w-full grid sm:grid-cols-[1.5fr_1fr] items-center justify-between z-[2]'>
           <div className='max-w-[650px] w-full'>
             <h1 className='sm:text-6xl text-4xl sm:text-left text-center tracking wider'>The <span className='font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent italic'> Futuristic Way</span> To Buy Insurance</h1>
@@ -15,9 +21,9 @@ function App() {
             <div className='flex flex-wrap gap-4 mt-6'>
               {policiesArray?.map((item, index) => {
                 return (
-                  <div key={index} className='cursor-pointer w-fit from-blue-500 via-purple-500 to-purple-400 p-[2px] rounded-xl m-auto'>
+                  <div key={index} className='cursor-pointer w-fit from-blue-500 via-purple-500 to-purple-400 p-[2px] rounded-xl m-auto' onClick={()=>scrollToProduct()}>
 
-                    <Cards className={"sm:w-[120px] w-[80px] sm:h-[120px] w-[80px] flex place-content-center bg-white rounded-lg p-4 border-[3px] border-white shadow hover:border-[#2a6dcf]"}>
+                    <Cards className={"sm:w-[120px] w-[80px] sm:h-[120px] w-[80px] flex place-content-center bg-white rounded-lg p-4 border-[3px] border-white shadow hover:border-[#2a6dcf]"} >
                       <img src={item?.imageUrl} alt={item?.alt} width={60} className='m-auto' />
                     </Cards>
                     <p className='text-center mt-2 text-xl'>{item?.title}</p>
@@ -37,7 +43,7 @@ function App() {
         <img src='/png/star-blue.png' alt='star' className='absolute right-10 sm:top-8 top-14 w-[18%] custom-spin2 duration-300' />
 
       </div>
-      <div className=' px-4 sm:py-16 py-8'>
+      <div className=' px-4 sm:py-16 py-8' >
         <div className='max-w-[1250px] mx-auto'>
           <h2 className='sm:text-5xl text-2xl font-semibold text-center sm:mb-14 mb-8'>Why <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> PBP Fintech?</span></h2>
           <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
@@ -55,7 +61,7 @@ function App() {
         </div>
       </div>
       {/* types */}
-      <div className='bg-gradient-to-r from-blue-100 to-purple-100'>
+      <div className='bg-gradient-to-r from-blue-100 to-purple-100' id='product'>
         <div className='max-w-[1250px] mx-auto sm:py-16 py-8 px-4'>
           <h2 className='sm:text-5xl text-2xl font-semibold text-center'>Types Of <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 text-transparent bg-clip-text italic'> Insurance Products</span></h2>
           <InsuranceProducts />
@@ -197,7 +203,7 @@ function App() {
           })}
         </div>
       </div>
-      <div className='bg-[#f2f7ff] px-4 py-6'>
+      <div className='bg-[#f2f7ff] px-4 py-6' id='contact'>
         <div className='max-w-[1250px] mx-auto sm:my-8 my-4 grid sm:grid-cols-2 sm:gap-4 gap-12 items-center'>
           <div>
             <img src='/contact.png' alt='contact' className='sm:w-[400px] w-[200px] mx-auto'/>
