@@ -5,7 +5,7 @@ const InsuranceProducts = () => {
     const [selectedTab, setSelectedTab] = React.useState("Bike");
     return (
         <div className="mt-6">
-            <div className=" flex flex-wrap max-w-[850px] mx-auto sm:gap-4 gap-2 text-center">
+            <div className="flex overflow-x-auto max-w-[850px] mx-auto sm:gap-4 gap-2 text-center" style={{scrollbarWidth:"none"}}>
                 {productsTab?.map((item, index) => {
                     return (
                         <div key={index} className="h-fit w-fit">
@@ -25,7 +25,7 @@ const InsuranceProducts = () => {
                                     return (
 
                                         <Cards key={ind} className={"min-w-[140px] !max-w-[145px] sm:!max-w-[180px] w-full !shadow-none sm:!p-4 !p-2 !py-4"}>
-                                            <img src={value?.imageUrl} alt="image" className=" sm:h-[44px] h-[36px] mx-auto" />
+                                            <img src={value?.imageUrl} alt="image" className=" sm:h-[44px] h-[36px] mx-auto" importance />
                                             <p className="text-center text-[16px] text-gray-500 mt-1">{value?.title}</p>
                                         </Cards>
                                     )

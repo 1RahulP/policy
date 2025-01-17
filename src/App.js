@@ -230,11 +230,11 @@ function App() {
               <div>
                 <h4 className='font-semibold text-xl mt-4'>Our HR</h4>
                 <p className=''>E-mail: &nbsp;
-                <a href='mailto:n$K55fGtD8@pbpfintech.in' className='sm:text-md text-sm font-semibold'>n$K55fGtD8@pbpfintech.in </a>
+                <a href='mailto:hr@pbpfintech.in' className='sm:text-md text-sm'>hr@pbpfintech.in </a>
                 </p>
                 <h4 className='font-semibold text-xl mt-4'>Support</h4>
                 <p className=''>E-mail: &nbsp;
-                <a href='mailto:BhTt3a6D!8@pbpfintech.in' className='sm:text-md text-sm font-semibold'>BhTt3a6D!8@pbpfintech.in </a>
+                <a href='mailto:support@pbpfintech.in' className='sm:text-md text-sm'>support@pbpfintech.in </a>
                 </p>
               </div>
             </div>
@@ -268,7 +268,7 @@ function App() {
       <div class="bg-white/10 backdrop-blur-lg rounded-lg px-4 py-2 shadow-lg">
         <p class="text-center text-white text-sm md:text-base">
           Designed and Developed by &nbsp;
-          <a href="#" class="font-semibold text-[#fff8dc]">Xynocast</a>
+          <a href="https.xynocast.com" class="font-semibold text-[#fff8dc]">Xynocast</a>
         </p>
       </div>
     </div>

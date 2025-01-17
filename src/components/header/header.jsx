@@ -27,7 +27,7 @@ const Header = () => {
         // })
     }
     return (
-        <div className="bg-[#ffffffba] fixed top-0 z-[9] w-full border-b sm:py-4 px-4 py-2">
+        <div className="bg-[#ffffffde] fixed top-0 z-[9] w-full border-b sm:py-4 px-4 py-2">
             <div className="max-w-[1250px] mx-auto flex justify-between items-center">
                 <div onClick={()=>scrollToNavigate("Home")}>
                     <img src="/insurance.png" alt="logo" width={54} />
