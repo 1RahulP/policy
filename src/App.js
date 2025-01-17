@@ -3,6 +3,7 @@ import './App.css';
 import Cards from './components/card-ui/Card';
 import InsurancePartners from './components/partners/partners';
 import InsuranceProducts from './components/products/products';
+import ScrollToTop from './components/scroll-top/scroll-top';
 
 function App() {
   const scrollToProduct = () =>{
@@ -262,6 +263,10 @@ function App() {
         </div>
       <p className='px-4 py-2 text-center border-t border-gray-500 text-sm'>© 2025 PBP Fintech Limited, All rights reserved.</p>
       </div>
+      {/* scroll to top */}
+      <section>
+        <ScrollToTop />
+      </section>
       <footer class="relative gradient-bg py-2">
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex justify-center items-center">
